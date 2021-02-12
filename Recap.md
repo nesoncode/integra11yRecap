@@ -17,8 +17,7 @@ Configuration de Git en Local :
  Dans le termianl, avec la commande git config, on va pouvoir configurer certaines informations afin de signer correctements les commits.
 
 On a <br/>
-*ajouté le nom d'utilisateur* : ```git config --global user.name "nom_user"``` 
-*On a ajouté l'adresse email* : ```git config --global user.email "notre@email"```.
+*ajouté le nom d'utilisateur* : ```git config --global user.name "nom_user"``` <br/>*On a ajouté l'adresse email* : ```git config --global user.email "notre@email"```.
 
 Pour vérifier que ces informations ont bien été enregistrées, on peut les lister dans le terminal : ```git config --global --list```.
 
