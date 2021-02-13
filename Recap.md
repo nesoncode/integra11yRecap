@@ -1,6 +1,4 @@
-# Formation Integra11y Recap
-
-## Sommaire
+# Sommaire
 
 - [Git](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
 
