@@ -1059,8 +1059,219 @@ p {
 }
 ```
 
+#### Ressources
+
+- [Contrast Triangle](https://contrast-triangle.com/)
+- [Tanaguru contrast finder](https://contrast-finder.tanaguru.com/)
+- [Changer de couleur, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/color)
+- [Changer de taille de police, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)
+- [Définir les polices de caractères, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-family)
+- [Définir la graisse utilisée pour le texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight)
+- [Aligner du texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-align)
+- [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
+- [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
+
 ## P2-J03
+
+### Faire des liens
+
+#### Syntaxe
+
+Syntaxe simple d'un lien :
+```<a href="https://duckduckgo.com">DuckDuckGo</a>```
+
+L'ancre :
+
+```html
+<a href="#ancre">Lien vers mon ancre</a>
+
+<section id="ancre">
+  <p>Du contenu ici</p>
+</section>
+```
+
+Un lien dans un nouvel onglet :
+```<a href="https://duckduckgo.com" title="DuckDuckGo - Nouvelle fenêtre" target="_blank">DuckDuckGo</a>```
+
+#### Relatif et absolu
+
+**Absolu** :
+URL complète ```https://www.integra11y.fr/programme.php```
+
+**Relatif** :
+Chemin vers la page voulue, relatif à la position actuelle.
+Depuis la page d'accueil à la racine : ```./programme.php.```
+
+#### Lien interne et lien externe
+
+**Lien interne** :
+Lien vers le site courant.
+Lien relatif de préférence sauf exception : Si le contenu doit paraitre dans un flux RSS.
+
+**Lien externe** :
+Lien vers une adresse différente.
+Lien absolu uniquement.
+
+##### Mail et téléphone
+
+Pour rendre une adresse mail ou un numéro de téléphone cliquable.
+
+**Mail** : ```<a href="mailto:contact@exemple.fr">contact@exemple.fr</a>```
+
+**Tel** : ```<a href="tel:+33607080910">06 07 08 09 10</a>```
+
+#### Pseudo classes CSS pour les différents états des liens
+
+
+- ```:visited``` : Lien déjà visité (se base sur l'historique de navigation)
+- ```:active``` : Élément actif (clic appuyé), si besoin d'indiquer qu'un élément est appuyé. Sur un lien menant vers une page ou un document, l'effet sera probablement peu visible.
+- ```:hover``` : Survolé (à l'aide de la souris)
+- ```:focus``` : Focus (Prise de contrôle de l'élément, au clic ou via une tabulation)
+- ```:link``` : Les liens n'ayant pas encore été visités (Ça ne veut pas dire style par défaut)
+
+#### Le style du focus
+
+Naviguation au clavier avec les touches ```tab```, et ```Maj``` ```tab``` pour revenir en arrière.
+
+Le style de focus par défaut peut-être supprimé à condition d'être remplacé par une autre solution adéquate **visible**.<br/>
+**On ne supprime pas totalement le style de focus** sous peine de rendre impossible la navigation au clavier en cachant la position courante. On recommande de laisser le style par défaut, ou bien de mettre un autre style avec la propriétée ```outline``` en CSS, en respectant le ratio de contraste 3:1 avec la couleur de fond de la page.
+
+#### Identifier un lien 
+
+Un lien doit être identifiable parmi le contenu qui l'entoure.<br/>
+Si on choisit d'avoir uniquement une couleur différente pour les liens, le ratio de contraste entre le lien et le texte qui l'entoure doit être d'au moins 3:1. Mais en plus, le ratio de contraste pour le lien doit être d'au moins 4,5:1 avec la couleur de fond. On peut s'aider de [cet outil](https://contrast-triangle.com) pour calculer le constraste de couleur.
+
+### Sélécteurs combinateurs
+
+Différents sélecteurs combinateurs :
+
+- Sélecteur de descendants : ```div span```
+- Sélecteur de descendants direct : ```ul > li```
+- Sélecteur de voisins : ```p ~ span```
+- Sélecteur de voisin direct : ```div + p```
+
+Il n'y a pas de sélecteur ascendant (Sélectionner un parent à partir d'un enfant).
 
 ## P2-J04
 
+### Spécificités CSS
+
+La spécificité détermine quelles règles CSS sont appliquées par les navigateurs. Par exemple, lorsque deux sélecteurs s'appliquent au même élément, c'est celui qui a la plus grande spécificité qui l'emporte.
+
+#### Hiérarchie des spécificités
+
+1. Les styles inline
+2. Les ```id```
+3. Les classes, atributs et pseudos-classes
+4. Éléments et pseudos-éléments
+
+Attention à l'usage de ```!important``` !
+
+#### Ressources
+
+- [Spécificité, MDN](https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Cascade_et_heritage#sp%C3%A9cificit%C3%A9_2)
+
+Sites pratiques pour calculer la spécifité des sélecteurs :
+
+- [Code Captain](https://www.codecaptain.io/tools/css-specificity-calculator)
+- [Polypane](https://polypane.app/css-specificity-calculator/)
+- [Keegan](https://specificity.keegan.st/)
+
+### Les images
+
+#### src
+
+```<img src="./mon-image.jpg">```
+
+#### width et height
+
+Les attributs ```width``` et ```height``` correspondent bien à l'espace alloué à l'image sur la page, et l'image appelée n'est pas sur-dimensionnée pour éviter des problèmes de performance, ni sous-dimensionnée pour qu'elle reste nette.
+
+#### alt
+
+Distinguer une image informative et une image décorative :<br/>
+**Informative** : Je remplis l'attribut alt.<br/>
+**Décorative** : Je mets l'attribut alt mais je le laisse vide : ```alt=""```.<br/>
+
+L'attribut ```alt``` est donc **toujours présent** sur une image.<br/>
+Si l'alternative est trop longue ou trop complexe, la description est ajoutée dans la page, un lien peut-être fait avec l'atribut ```longdesc``` vers cette description.
+
+#### Lien images
+
+Si le lien ne contient qu'une image, c'est le alt qui peut servir d'intitulé.
+
+```html
+<a href="index.html">
+  <img src="./home.png" alt="Accueil" width="64" height="64">
+</a>
+```
+
+Ou bien avec ```title``` si l'intitulé du lien n'est pas suffisant (on reprends l'intitulé du lien + une information supplémentaire utile) :
+
+```html
+<a href="index.html" title="Integra11y (retour à l’accueil)">
+  <img src="./integra11y.png" alt="Integra11y" width="64" height="64">
+</a>
+```
+
+#### Lien composite
+
+On évite de faire deux lien adjacents identiques (lien image et lien texte). Faisons plutôt un lien composite pour éviter la redondance.
+Ici c'est ce qu'on appelle un "lien composite", un lien contenant à la fois du texte et un ou plusieurs enfants de type image.
+Si le lien contient un intitulé explicite, l'image est alors plutôt décorative et on garde le ```alt``` vide.
+
+```html
+<a href="index.html">
+  <img src="./home.png" alt="">
+  Accueil
+</a>
+```
+
+#### Vérifier ses attributs alt
+
+Avec l'extension navigateur Web Developer, dans l'onglet "images" puis : "Display Alt Attributes".
+
 ## P2-J05
+
+### Modèle de boîte
+
+#### Modèles de boîte :
+
+- **Par défaut** : ```box-sizing: content-box;``` - La taille de la boite de contenu
+- **Alternatif** : ```box-sizing: border-box;``` - La taille de la boite de contenu + ```padding``` + ```border``` compris.
+
+Attention, ```padding-box``` est obsolète.
+
+Astuce pour utiliser ce modèle de boîte alternatif partout sur le site :
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+```
+
+#### margin, padding, border
+
+Sur les éléments de type inline :
+
+- ```width``` et ```height``` sont ignorées
+- ```padding```, ```margin``` et ```border``` appliquées verticalement ne provoque pas de déplacement des éléments alentours
+- ```padding```, ```margin``` et ```border``` appliquées horizontalement provoque le déplacement des éléments alentours
+
+Sur les éléments de type bloc :
+
+- ```width``` et ```height``` sont appliqués
+- ```padding```, ```margin``` et ```border``` sont appliqués en provoquant le déplacement des éléments alentours
+
+La valeur ```auto``` sur sa propriété margin permet de donner des marges qui prennent la place disponible. Dès lorsque l'on spécifie une taille (```width```) à l'élément de type bloc, les marges de droite et de gauche en ```auto``` vont permettre de centrer l'élément.
+
+#### Fusion de marge
+
+Les marges verticales fusionnent sur les éléments de type bloc, en prenant la valeur la plus grande :
+
+- Entre éléments adjacents
+- Entre éléments parents / enfants
