@@ -1110,9 +1110,7 @@ Un lien dans un nouvel onglet :
 URL complète ```https://www.integra11y.fr/programme.php```
 
 **Relatif** :
-
 Chemin vers la page voulue, relatif à la position actuelle.
-
 Depuis la page d'accueil à la racine : ```./programme.php.```
 
 #### Lien interne et lien externe
