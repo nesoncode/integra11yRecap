@@ -1061,6 +1061,7 @@ p {
 
 #### Ressources
 
+- [Contrast Triangle](https://contrast-triangle.com/)
 - [Tanaguru contrast finder](https://contrast-finder.tanaguru.com/)
 - [Changer de couleur, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/color)
 - [Changer de taille de police, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)
@@ -1071,6 +1072,88 @@ p {
 - [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
 
 ## P2-J03
+
+### Sélécteurs combinateurs
+
+Différents sélecteurs combinateurs :
+
+- Sélecteur de descendants : ```div span```
+- Sélecteur de descendants direct : ```ul > li```
+- Sélecteur de voisins : ```p ~ span```
+- Sélecteur de voisin direct : ```div + p```
+
+Il n'y a pas de sélecteur ascendant (Sélectionner un parent à partir d'un enfant).
+
+### Faire des liens
+
+#### Syntaxe
+
+Syntaxe simple d'un lien :
+```<a href="https://duckduckgo.com">DuckDuckGo</a>```
+
+L'ancre :
+
+```html
+<a href="#ancre">Lien vers mon ancre</a>
+
+<section id="ancre">
+  <p>Du contenu ici</p>
+</section>
+```
+
+Un lien dans un nouvel onglet :
+```<a href="https://duckduckgo.com" title="DuckDuckGo - Nouvelle fenêtre" target="_blank">DuckDuckGo</a>```
+
+#### Relatif et absolu
+
+**Absolu** :
+URL complète ```https://www.integra11y.fr/programme.php```
+
+**Relatif** :
+
+Chemin vers la page voulue, relatif à la position actuelle.
+
+Depuis la page d'accueil à la racine : ```./programme.php.```
+
+#### Lien interne et lien externe
+
+**Lien interne** :
+Lien vers le site courant.
+Lien relatif de préférence sauf exception : Si le contenu doit paraitre dans un flux RSS.
+
+**Lien externe** :
+Lien vers une adresse différente.
+Lien absolu uniquement.
+
+##### Mail et téléphone
+
+Pour rendre une adresse mail ou un numéro de téléphone cliquable.
+
+**Mail** : ```<a href="mailto:contact@exemple.fr">contact@exemple.fr</a>```
+
+**Tel** : ```<a href="tel:+33607080910">06 07 08 09 10</a>```
+
+#### Pseudo classes CSS pour les différents états des liens
+
+
+- ```:visited``` : Lien déjà visité (se base sur l'historique de navigation)
+- ```:active``` : Élément actif (clic appuyé), si besoin d'indiquer qu'un élément est appuyé. Sur un lien menant vers une page ou un document, l'effet sera probablement peu visible.
+- ```:hover``` : Survolé (à l'aide de la souris)
+- ```:focus``` : Focus (Prise de contrôle de l'élément, au clic ou via une tabulation)
+- ```:link``` : Les liens n'ayant pas encore été visités (Ça ne veut pas dire style par défaut)
+
+#### Le style du focus
+
+Naviguation au clavier avec les touches ```tab```, et ```Maj``` ```tab``` pour revenir en arrière.
+
+Le style de focus par défaut peut-être supprimé à condition d'être remplacé par une autre solution adéquate **visible**.<br/>
+**On ne supprime pas totalement le style de focus** sous peine de rendre impossible la navigation au clavier en cachant la position courante. On recommande de laisser le style par défaut, ou bien de mettre un autre style avec la propriétée ```outline``` en CSS, en respectant le ratio de contraste 3:1 avec la couleur de fond de la page.
+
+#### Identifier un lien 
+
+Un lien doit être identifiable parmi le contenu qui l'entoure.<br/>
+Si on choisit d'avoir uniquement une couleur différente pour les liens, le ratio de contraste entre le lien et le texte qui l'entoure doit être d'au moins 3:1. Mais en plus, le ratio de contraste pour le lien doit être d'au moins 4,5:1 avec la couleur de fond. On peut s'aider de [cet outil](https://contrast-triangle.com) pour calculer le constraste de couleur.
+
 
 ## P2-J04
 
