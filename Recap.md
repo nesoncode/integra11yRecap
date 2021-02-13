@@ -1232,3 +1232,46 @@ Si le lien contient un intitulé explicite, l'image est alors plutôt décorativ
 Avec l'extension navigateur Web Developer, dans l'onglet "images" puis : "Display Alt Attributes".
 
 ## P2-J05
+
+### Modèle de boîte
+
+#### Modèles de boîte :
+
+- **Par défaut** : ```box-sizing: content-box;``` - La taille de la boite de contenu
+- **Alternatif** : ```box-sizing: border-box;``` - La taille de la boite de contenu + ```padding``` + ```border``` compris.
+
+Attention, ```padding-box``` est obsolète.
+
+Astuce pour utiliser ce modèle de boîte alternatif partout sur le site :
+
+```css
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+```
+
+#### margin, padding, border
+
+Sur les éléments de type inline :
+
+- ```width``` et ```height``` sont ignorées
+- ```padding```, ```margin``` et ```border``` appliquées verticalement ne provoque pas de déplacement des éléments alentours
+- ```padding```, ```margin``` et ```border``` appliquées horizontalement provoque le déplacement des éléments alentours
+
+Sur les éléments de type bloc :
+
+- ```width``` et ```height``` sont appliqués
+- ```padding```, ```margin``` et ```border``` sont appliqués en provoquant le déplacement des éléments alentours
+
+La valeur ```auto``` sur sa propriété margin permet de donner des marges qui prennent la place disponible. Dès lorsque l'on spécifie une taille (```width```) à l'élément de type bloc, les marges de droite et de gauche en ```auto``` vont permettre de centrer l'élément.
+
+#### Fusion de marge
+
+Les marges verticales fusionnent sur les éléments de type bloc, en prenant la valeur la plus grande :
+
+- Entre éléments adjacents
+- Entre éléments parents / enfants
