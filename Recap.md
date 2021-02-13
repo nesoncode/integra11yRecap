@@ -1068,11 +1068,10 @@ p {
 - [Définir la graisse utilisée pour le texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight)
 - [Aligner du texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-align)
 - [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
-- <a href="https://developer.mozilla.org/fr/docs/Web/CSS/border" target="_blank">Définir la bordure d'un élément HTML, MDN</a>
+- [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
 
 ## P2-J03
 
 ## P2-J04
 
 ## P2-J05
-<a href="example.com" target="_blank">New Tab</a>
