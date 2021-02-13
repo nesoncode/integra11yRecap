@@ -1,21 +1,36 @@
 # Formation Integra11y Recap
 
 ## Sommaire
-- [Git](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
-- [Créer une sauvegarde VSCode](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#créer-une-sauvegarde-vscode-)
-- [Retrouver de code supprimé](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#utiliser-checkout-branch-pour-retrouver-du-code-supprim%C3%A9-)
-- [Balisages et sémantiques - Markdown](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#balisages-et-sémantiques---markdown)
-- [Markdown et HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#markdown-et-html)
-- [Git et les branches](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-et-les-branches)
-- [Droits d'auteur](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#droits-dauteur)
-- [Licenses](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#licenses)
-- [Découverte du language HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#découverte-du-langage-html)
-- [Introduction à CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#introduction-à-css)
-- [Faire des liens](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#faire-des-liens)
-- [Sélécteurs combinateurs](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sélécteurs-combinateurs)
-- [Spécificités CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#spécificités-css)
-- [Les images](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#les-images)
-- [Modèle de boîte](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#modèle-de-boîte)
+
+- ### [Git](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+
+- ### [Créer une sauvegarde VSCode](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#créer-une-sauvegarde-vscode-)
+  
+- ### [Retrouver de code supprimé](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#utiliser-checkout-branch-pour-retrouver-du-code-supprim%C3%A9-)
+  
+- ### [Balisages et sémantiques - Markdown](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#balisages-et-sémantiques---markdown)
+  
+- ### [Markdown et HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#markdown-et-html)
+  
+- ### [Git et les branches](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-et-les-branches)
+  
+- ### [Droits d'auteur](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#droits-dauteur)
+  
+- ### [Licenses](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#licenses)
+  
+- ### [Découverte du language HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#découverte-du-langage-html)
+  
+- ### [Introduction à CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#introduction-à-css)
+  
+- ### [Faire des liens](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#faire-des-liens)
+  
+- ### [Sélécteurs combinateurs](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sélécteurs-combinateurs)
+  
+- ### [Spécificités CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#spécificités-css)
+  
+- ### [Les images](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#les-images)
+  
+- ### [Modèle de boîte](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#modèle-de-boîte)
 
 
 ## Git :
