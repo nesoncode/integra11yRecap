@@ -1,5 +1,23 @@
 # Formation Integra11y Recap
 
+## Sommaire
+- [Git](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Créer une sauvegarde VSCode](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Retrouver de code supprimé](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Balisages et sémantiques - Markdown](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Markdown et HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Git et les branches](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Droits d'auteur](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Licenses](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Découverte du language HTML](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Introduction à CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Faire des liens](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Sélécteurs combinateurs](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Spécificités CSS](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Les images](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+- [Modèle de boîte](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#git-)
+
+
 ## Git :
 SCM (Source Code Manager), un gestionnaire de version qui permet de garder dans un historique les différentes étapes du développement.
 
@@ -780,7 +798,6 @@ ___
 
 C'est la garantie légale que l'auteur restera propriétaire de son oeuvre En france (et dans plusieurs pays d'Europe), l'auteur et ses héritiers sont propriétaires d'une oeuvre jusqu'à 70 ans après le décès de l'auteur Au delà de ce délai, l'oeuvre passe dans le domaine public.
 
-___
 ## Licenses
 
 Plusieurs types de licences :
