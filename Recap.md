@@ -1075,4 +1075,4 @@ p {
 ## P2-J04
 
 ## P2-J05
-https://developer.mozilla.org/fr/docs/Web/CSS/border
+<a href="example.com" target="_blank">New Tab</a>
