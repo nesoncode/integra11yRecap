@@ -58,6 +58,7 @@ ___
 
 - Pour vérifier que tout est ok, on rafraichit la page du navigateur 😉
 
+___
 ## Utiliser ```checkout branch``` pour retrouver du code supprimé :
 
 - afficher les commits avec Git Graph (click dans la barre d'état, en bas)
@@ -76,7 +77,6 @@ ___
 - on crée une sauvegarde et on l'envoie sur GitHub
 
 ___
-
 ## Balisages et sémantiques - Markdown
 
 ### Introduction
@@ -293,6 +293,7 @@ ___
 ---
 ```
 
+___
 ## Markdown et HTML
 
 Markdown et HTML :
@@ -670,6 +671,7 @@ Les pandas roux sont géniaux. Ils sont mignons et tout doux.
 
 Ne pas utiliser la balise ```<hr>``` à des fins de présentation, par exemple pour insérer une ligne horizontale pour « faire joli ». Le style CSS est là pour ça !
 
+___
 ## Git et les branches
 
 Pour travailler proprement, on ne va pas utiliser la branche ```main``` pour le développement : git nous permet de créer d'autres branches dans le même projet !
@@ -773,10 +775,12 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 - mais aussi dans le dépôt distant
     - ```git push origin --delete <nom_branche>```
 
+___
 ## Droits d'auteur
 
 C'est la garantie légale que l'auteur restera propriétaire de son oeuvre En france (et dans plusieurs pays d'Europe), l'auteur et ses héritiers sont propriétaires d'une oeuvre jusqu'à 70 ans après le décès de l'auteur Au delà de ce délai, l'oeuvre passe dans le domaine public.
 
+___
 ## Licenses
 
 Plusieurs types de licences :
@@ -827,6 +831,7 @@ Cest le cas de Wikipédia, on va pouvoir réutiliser les textes des articles sou
 
 [Plus de détails ici](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia)
 
+___
 ## Découverte du langage HTML
 
 Pour ouvrir l'inspecteur de code du navigateur : Raccourci ```F12``` ou via le clic droit "Inspecter l'élément".
@@ -925,12 +930,14 @@ Syntaxe : ```<!-- Un commentaire en HTML -->```
     HTML !
   -->
 ```
-## Ressources
+
+### Ressources
 
 - [Liste des balises dites "auto-fermante"](https://html.spec.whatwg.org/multipage/syntax.html#void-elements)
 - [Référence des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [Validateur HTML W3C](https://validator.w3.org/)
 
+___
 ## Introduction à CSS
 
 CSS = Cascading Style Sheets
@@ -1057,6 +1064,7 @@ p {
 - [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
 - [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
 
+___
 ## Faire des liens
 
 ### Syntaxe
@@ -1125,6 +1133,7 @@ Le style de focus par défaut peut-être supprimé à condition d'être remplac�
 Un lien doit être identifiable parmi le contenu qui l'entoure.<br/>
 Si on choisit d'avoir uniquement une couleur différente pour les liens, le ratio de contraste entre le lien et le texte qui l'entoure doit être d'au moins 3:1. Mais en plus, le ratio de contraste pour le lien doit être d'au moins 4,5:1 avec la couleur de fond. On peut s'aider de [cet outil](https://contrast-triangle.com) pour calculer le constraste de couleur.
 
+___
 ## Sélécteurs combinateurs
 
 Différents sélecteurs combinateurs :
@@ -1136,6 +1145,7 @@ Différents sélecteurs combinateurs :
 
 Il n'y a pas de sélecteur ascendant (Sélectionner un parent à partir d'un enfant).
 
+___
 ## Spécificités CSS
 
 La spécificité détermine quelles règles CSS sont appliquées par les navigateurs. Par exemple, lorsque deux sélecteurs s'appliquent au même élément, c'est celui qui a la plus grande spécificité qui l'emporte.
@@ -1159,6 +1169,7 @@ Sites pratiques pour calculer la spécifité des sélecteurs :
 - [Polypane](https://polypane.app/css-specificity-calculator/)
 - [Keegan](https://specificity.keegan.st/)
 
+___
 ## Les images
 
 ### src
@@ -1213,6 +1224,7 @@ Si le lien contient un intitulé explicite, l'image est alors plutôt décorativ
 
 Avec l'extension navigateur Web Developer, dans l'onglet "images" puis : "Display Alt Attributes".
 
+___
 ## Modèle de boîte
 
 ### Modèles de boîte :
