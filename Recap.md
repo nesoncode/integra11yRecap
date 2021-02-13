@@ -1,8 +1,6 @@
 # Formation Integra11y Recap
 
-## **P1-J01**
-
-### Git :
+## Git :
 SCM (Source Code Manager), un gestionnaire de version qui permet de garder dans un historique les différentes étapes du développement.
 
 ### Github Pages : 
@@ -42,9 +40,7 @@ Afin de garder aussi ressemblant que possible le dépot local et le dépot dista
 
 ___
 
-## P1-J02
-
-### Créer une sauvegarde VSCode :
+## Créer une sauvegarde VSCode :
 
 - dans la sidebar de VSCode, on clique sur le logo git
 - la liste des fichiers modifiés sont affichés
@@ -62,7 +58,7 @@ ___
 
 - Pour vérifier que tout est ok, on rafraichit la page du navigateur 😉
 
-### Utiliser ```checkout branch``` pour retrouver du code supprimé :
+## Utiliser ```checkout branch``` pour retrouver du code supprimé :
 
 - afficher les commits avec Git Graph (click dans la barre d'état, en bas)
 - retrouver le commit de la suppression de WordPress (s'il a bien été nommé, ce sera rapide)
@@ -81,18 +77,16 @@ ___
 
 ___
 
-## P1-J03
+## Balisages et sémantiques - Markdown
 
-### Balisages et sémantiques - Markdown
-
-#### Introduction
+### Introduction
 
 - langage de balisage : langage permettant de structurer ou mettre en forme des données en les organisant à l'aide de balises.
 - Balises compréhensibles par un analyseur syntaxique (parser en anglais) --> interpréte le code et l'affiche.
 - Fichiers HTML : lus par navigateurs Web.
 - Particularité : la syntaxe est lisible d'elle-même : compris en le lisant, sans programme informatique.
 
-#### Qu'est-ce qu'un fichier Markdown ?
+### Qu'est-ce qu'un fichier Markdown ?
 
 - Format du fichier : .md
 - Ouvrir dans VSCode
@@ -101,22 +95,22 @@ ___
     - raccourci ```Ctrl+Shift+V``` pour ouvrir l'onglet aperçu
     - raccourci ```Ctrl+K V``` (```Ctrl+K```, relâcher puis ```V```)
 
-##### Aperçu : modifications en temps réel.
+#### Aperçu : modifications en temps réel.
 
 - Syntaxe de Markdown : caractères de ponctuation.
 
-#### Pourquoi se servir de Markdown ?
+### Pourquoi se servir de Markdown ?
 
 - documentation de projets web (les fameux fichiers readme.md) : plus pratique pour écrire et modifier du texte, plus que le HTML.
 - publier des contenus : blog, wikis, forums (comme Reddit…)
 
-#### La syntaxe Markdown
+### La syntaxe Markdown
 
 - Ne se substitue pas au HTML,
 - Fonctions réduites,
 - Outil complémentaire. Possible d’insérer HTML dans Markdown.
 
-#### Titres
+### Titres
 
 2 syntaxes :
 
@@ -141,13 +135,13 @@ Titre 2
 ------
 ```
 
-#### Paragraphes
+### Paragraphes
 
 ```
 1 nouveau paragraphe : une ligne vierge.
 ```
 
-#### Listes
+### Listes
 
 - Liste non-ordonnée (à puces), trois syntaxes :
 
@@ -172,11 +166,11 @@ Titre 2
 3. Liste 3
 ```
 
-#### Remarque
+### Remarque
 
 Chiffre employé : aucune importance. Ex : 3 fois le chiffre 1 ou commencer par le chiffre 3 --> liste correctement numérotée.
 
-#### Texte en gras et en italique
+### Texte en gras et en italique
 
 Syntaxe : **astérisques** :
 
@@ -186,21 +180,21 @@ Syntaxe : **astérisques** :
 - ***Gras et italique*** (```***Gras et italique***```)
 
 
-#### Remarque
+### Remarque
 
 - Markdown : soulignement impossible :
     - Tendance délaissée sur le Web : hyperliens ==> texte souligné
     - Évite de souligner d’autres éléments pour éviter toute confusion.
 
-#### Hyperliens
+### Hyperliens
 
-##### parenthèses et des crochets :
+#### parenthèses et des crochets :
 
 - texte du lien entre crochets ```[]```,
 
 - URL entre parenthèses ```()```.
 
-##### Exemple :
+#### Exemple :
 
 Code
 
@@ -212,7 +206,7 @@ Résultat
 
 Voici un exemple de lien : [Intitulé du lien](https://example.com/).
 
-#### Citations
+### Citations
 
 Signe supérieur à ```>```
 
@@ -239,11 +233,11 @@ Résultat :
 
 Cette ligne n’est pas en retrait.
 
-#### Code
+### Code
 
 Syntaxe : **Backtick** ou apostrophe inversée (ne pas confondre avec les guillemets !) :
 
-##### Code inline
+#### Code inline
 
 Code à l'intérieur du paragraphe de texte, comme italique ou gras.
 
@@ -255,12 +249,12 @@ Cette phrase contient un terme en `code`.
 
 Résultat :
 
-##### Remarque
+#### Remarque
 
 - Attention à ne pas écrire un accent grave (si caractère est suivi d'une voyelle) :
     - Une espace entre l’apostrophe inversée et la voyelle.
 
-##### Code bloc
+#### Code bloc
 
 – Tout un bloc de texte :
 
@@ -284,7 +278,7 @@ Ceci est un nouveau paragraphe classique.
 </html>
 ```
 
-#### Ligne horizontale
+### Ligne horizontale
 
 - au minimum 3 fois de suite :
     - ```_``` (« tiret du bas »)
@@ -299,7 +293,7 @@ ___
 ---
 ```
 
-### Markdown et HTML
+## Markdown et HTML
 
 Markdown et HTML :
 
@@ -317,9 +311,9 @@ _Exercice pratique_ : Prévisualiser le code dans l'inspecteur :
 - examiner l'élément
 - Ou utiliser le raccourci clavier : Ctrl + Maj + C (ou Cmd + Maj + C sous Mac OS)
 
-#### Sémantique HTML & accessibilité
+### Sémantique HTML & accessibilité
 
-##### Introduction rapide au HTML
+#### Introduction rapide au HTML
 
 Notions rapides sur les balises :
 
@@ -337,7 +331,7 @@ Notions rapides sur les balises :
 
     (On reviendra sur le HTML plus en détails en semaine 2, pas de panique !)
 
-##### La Sémantique HTML
+#### La Sémantique HTML
 
 Le HTML est composé d'éléments sémantiques et d'éléments non sémantiques:
 
@@ -345,19 +339,19 @@ Le HTML est composé d'éléments sémantiques et d'éléments non sémantiques:
 
 - Éléments non sémantiques ne disent rien sur la signification de leur contenu.
 
-##### Coder en HTML sémantique :
+#### Coder en HTML sémantique :
 
 - Utiliser les éléments HTML pour communiquer une signification/des informations sur le contenu des documents Web plutôt qu'à des fins de présentation.
 - Une grande partie des contenus web peut être rendue accessible grâce à l'utilisation d'éléments HTML appropriés !
 - Ne demande pas plus de temps à écrire que du balisage non-sémantique
 
-##### Coder en HTML non-sémantique :
+#### Coder en HTML non-sémantique :
 
 - Une des principales causes des problèmes d'accessibilité sur le Web !
 
 Repassons sur les éléments vus plus tôt en Markdown, dans leur version HTML.
 
-#### Titres
+### Titres
 
 Pour les titres, côté HTML, on remplace les signes dièse ```#``` par des balises ```<hN>```.
 
@@ -369,7 +363,7 @@ Décortiquons **la balise ouvrante** :
 - Le signe supérieur ```>``` vient fermer la marche,
 - Ce qui donne : ```<h1>``` dans le cas d'un titre de niveau 1.
 
-##### La balise fermante :
+#### La balise fermante :
 
 - Presque identique à la balise ouvrante,
 - On ajoute un signe ```/```(barre oblique) après le signe ```<``` pour signifier qu'il s'agit de la balise fermante,
@@ -403,7 +397,7 @@ Les titres de niveau vont du niveau 1(```<h1>```) au niveau 6 (```<h6>```) :
 <h6>Titre de niveau 4</h6>
 ```
 
-##### Accessibilité
+#### Accessibilité
 
 **Il est primordial de conserver une structure de titre cohérente !**
 
@@ -411,7 +405,7 @@ Les titres de niveau vont du niveau 1(```<h1>```) au niveau 6 (```<h6>```) :
 - Ne pas sauter un niveau de titre
 - L'absence d'un titre intermédiaire pourrait amener le lecteur à se demander où le titre a été placé.
 
-###### Exemple :
+##### Exemple :
 
 Passer d'un titre de niveau 2 à un titre de niveau 4 casserait la structure logique du document.
 
@@ -438,7 +432,7 @@ Les balises de titres **ne doivent pas servir** à :
 
 **Le HTML ne doit pas être utilisé à des fins de mise en forme**, d'autres outils (styles CSS, guides de style) permettent de régler ces problèmes.
 
-#### Paragraphes
+### Paragraphes
 
 Côté HTMl, les paragraphes sont signifiés par la balise ```<p>``` :
 
@@ -449,7 +443,7 @@ Côté HTMl, les paragraphes sont signifiés par la balise ```<p>``` :
 <p>Ceci est un nouveau paragraphe.</p>
 ```
 
-##### Accessibilité
+#### Accessibilité
 
 Répartir le contenu entre différents paragraphes permet d'améliorer l'accessibilité d'une page :
 
@@ -470,9 +464,9 @@ Cette structure de page n'est pas pertinente !
 
 Si besoin d'espacer les paragraphes : les propriétés CSS sont là pour ça ! (Vous le verrez en deuxième semaine)
 
-#### Listes
+### Listes
 
-##### Listes non ordonnées (à puces)
+#### Listes non ordonnées (à puces)
 
 Une liste non ordonnées correspond à une liste d'éléments sans ordre particulier. Elle est souvent représentée par une liste à puces.
 
@@ -495,7 +489,7 @@ Ce qui donne :
 </ul>
 ```
 
-##### Listes ordonnées (à numéros)
+#### Listes ordonnées (à numéros)
 
 Une liste ordonnées correspond à une liste numérotée.
 
@@ -519,7 +513,7 @@ Ce qui donne :
 
 Note : les numéros de la liste peuvent prendre la forme de nombres, de lettres, de chiffres romains ou de points. La mise en forme de la numérotation n'est pas utilisée dans la description HTML.
 
-##### Accessibilité
+#### Accessibilité
 
 Structurer correctement les listes dans des listes ordonnées ou non ordonées permet permet d'améliorer l'accessibilité d'une page :
 
@@ -542,13 +536,13 @@ Cette liste n'est pas corectement structurée !
 </p>
 ```
 
-#### Texte en gras et en italique
+### Texte en gras et en italique
 
-##### Gras
+#### Gras
 
 L'élément HTML ```<strong>``` permet d'appliquer une emphase forte à un élément de texte. Cela se traduit généralement par un affichage en gras.
 
-###### Pourquoi y a t'il plusieurs balises différentes ?
+##### Pourquoi y a t'il plusieurs balises différentes ?
 
 - La balise ```<strong>``` permet une mise en emphase forte :
     - C'est une balise avec une signification sémantique,
@@ -566,7 +560,7 @@ Ce qui donne :
 <p>Je souhaite mettre une emphase forte sur <strong>les mots suivants</strong> dans mon paragraphe.</p>
 ```
 
-##### Italique
+#### Italique
 
 Il y'a plusieurs manières de signifier l'italique en HTML. L'élément principal à retenir est ```<em>```:
 
@@ -584,7 +578,7 @@ Note :
 
 - Il existe un élément permettant de marquer le titre d'une œuvre (livre, chanson, pièce, etc.) : la balise <cite>
 
-#### Liens
+### Liens
 
 Côté HTMl, les liens sont signifiés par la balise ```<a>``` (pour ancre, anchor en anglais). Cette balise sémantique permet d'indiquer un hyperlien vers :
 
@@ -600,7 +594,7 @@ Ce qui donne :
 <p>Ceci est un nouveau paragraphe.</p>
 ```
 
-##### Accessibilité
+#### Accessibilité
 
 **Ne pas confondre un lien et un bouton !**
 
@@ -613,7 +607,7 @@ Ce qui donne :
 
 Les personnes qui utilisent TA, ont des troubles de la vision et/ou cognitifs peuvent être confuses lorsqu'un lien déclenche une action qui devrait être lancée par un bouton.
 
-#### Citations
+### Citations
 
 En HTML, une citation est indiquée par deux balises différentes, selon la longueur de la citation. Toutes deux sont des balises sémantiques :
 
@@ -633,7 +627,7 @@ Ce qui donne :
 </p>
 ```
 
-#### Code
+### Code
 
 En HTML, on indique la présence d'un code dans un texte grâce à deux balises sémantiques :
 
@@ -651,7 +645,7 @@ Ce qui donne :
 </pre>
 ```
 
-#### Ligne horizontale
+### Ligne horizontale
 
 En HTML, la ligne horizontale a une signification sémantique :
 
@@ -672,19 +666,17 @@ Les pandas roux sont géniaux. Ils sont mignons et tout doux.
 </p>
 ```
 
-##### Accessibilité
+#### Accessibilité
 
 Ne pas utiliser la balise ```<hr>``` à des fins de présentation, par exemple pour insérer une ligne horizontale pour « faire joli ». Le style CSS est là pour ça !
 
-## P1-J04
-
-### Git et les branches
+## Git et les branches
 
 Pour travailler proprement, on ne va pas utiliser la branche ```main``` pour le développement : git nous permet de créer d'autres branches dans le même projet !
 
 C'est une bonne pratique, la branche ```main``` ne doit contenir qu'une version opérationnelle du projet, on va donc travailler, se tromper et corriger dans une branche à part pour ne pas abîmer le projet final.
 
-#### 1. Récupérer le code
+### 1. Récupérer le code
 
 - on ouvre VSCode
     - on doit avoir accès au bouton ```Cloner un dépôt```.
@@ -692,12 +684,12 @@ C'est une bonne pratique, la branche ```main``` ne doit contenir qu'une version 
 - on clone le projet en local.
 - depuis le terminal la commande est : ```git clone adresse_du_dépot```
 
-#### 2. Etude du projet
+### 2. Etude du projet
 
 - avec Git Graph, on vérifie les branches et les commits existants
 - on regarde ce qui a déjà été fait dans le fichier ```programme.md```.
 
-#### 3. Création d'une nouvelle branche
+### 3. Création d'une nouvelle branche
 
 On a plusieurs solutions pour créer une nouvelle branche
 
@@ -714,7 +706,7 @@ On a plusieurs solutions pour créer une nouvelle branche
 
 Tous les commits qu'on fera par la suite se feront sur cette branche
 
-#### 4. On avance le travail et on push sur Github
+### 4. On avance le travail et on push sur Github
 
 - on travaille comme d'habitude
     - on modifie le fichier ```programme.md```
@@ -737,7 +729,7 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 
 - on checke sur GitHub : les commits sont bien dans la nouvelle branche
 
-#### 5. Pull Request
+### 5. Pull Request
 
 - une fois le travail terminé, on va proposer une mise à jour de la branche ```main```
 - bonne pratique : faire vérifier son code par d'autres développeurs, on appelle ça une revue de code
@@ -749,7 +741,7 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 - quand tout le monde est d'accord, on peut fusionner la branche de développement avec la branche ```main``` : on fait un ```merge``` de la branche de dev dans ```main```
 - dans ```main```, on a un nouveau commit qui contient toutes les modifications apportées
 
-#### 6. Mise à jour du code en local après une PR (Pull Request)
+### 6. Mise à jour du code en local après une PR (Pull Request)
 
 - après la fusion (le merge), le code est à jour sur GitHub mais pas en local
 - on va devoir récupérer le smodifications pour que le dépôt local et le dépôt distant contienne la même chose
@@ -759,7 +751,7 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 - on récupère les modifs avec un pull
 - le graphe prend en compte les modifications
 
-#### Mise à jour du code d'une branche de dev à partir de la branche principale
+### Mise à jour du code d'une branche de dev à partir de la branche principale
 
 - si un autre développeur a créé une branche de son côté, il va devoir mettre à jour son code
 - pour éviter les problèmes, il doit prendre en compte les modifications apportées à la branche ```main```
@@ -771,7 +763,7 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
     - origin est le nom donné au dépôt distant, main désigne la branche qu'on veut rapatrier dans la branche de dev
 - on peut vérifier le résultat sur le graphe, la branche de dev est au même niveau que la branche ```main```
 
-#### Suppression d'une branche 
+### Suppression d'une branche 
 
 - une fois le travail effectué sur la branche de dev et la PR validée, on voudra souvent supprimer la branche de dev
 - il faut être positionné sur une autre branche pour effectuer cette opération, on se place sur la branche ```main```
@@ -781,13 +773,11 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 - mais aussi dans le dépôt distant
     - ```git push origin --delete <nom_branche>```
 
-## P1-J05
-
-### Droits d'auteur
+## Droits d'auteur
 
 C'est la garantie légale que l'auteur restera propriétaire de son oeuvre En france (et dans plusieurs pays d'Europe), l'auteur et ses héritiers sont propriétaires d'une oeuvre jusqu'à 70 ans après le décès de l'auteur Au delà de ce délai, l'oeuvre passe dans le domaine public.
 
-### Licenses
+## Licenses
 
 Plusieurs types de licences :
 
@@ -837,13 +827,11 @@ Cest le cas de Wikipédia, on va pouvoir réutiliser les textes des articles sou
 
 [Plus de détails ici](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia)
 
-## P2-J01
-
-### Découverte du langage HTML
+## Découverte du langage HTML
 
 Pour ouvrir l'inspecteur de code du navigateur : Raccourci ```F12``` ou via le clic droit "Inspecter l'élément".
 
-#### Le HTML
+### Le HTML
 
 C'est le fond. La forme c'est en CSS.
 
@@ -853,7 +841,7 @@ On fait attention à :
 - La hiérarchie de contenu formé par l'order logique des titres
 - L'accessibilité
 
-##### Syntaxe
+#### Syntaxe
 
 - Syntaxe d'une balise d'ouverture : ```<html>```
 - Syntaxe d'une balise de fermeture : ```</html>```
@@ -867,7 +855,7 @@ Un élément avec un attribut et une valeur :
 </html>
 ```
 
-#### Les éléments de base d'une page HTML
+### Les éléments de base d'une page HTML
 
 
 - Le ```Doctype``` pour déclarer le document
@@ -891,7 +879,7 @@ Un élément avec un attribut et une valeur :
 ```
 (**Raccourcis Emmet** : ```!```)
 
-#### Les éléments de structuration du contenu / éléments sectionnants
+### Les éléments de structuration du contenu / éléments sectionnants
 
 Ces balises sont obligatoire dans un document HTML 5 si ces zones existent :
 
@@ -908,11 +896,11 @@ Il existe ensuite d'autres, pas obligatoire mais très utiles :
 - ```<address>``` : Information de contact relative à son élément parent, article ou body (Nom, adresse postale)
 - Titre Hn : Titre de niveau 1 à 6
 
-#### Quelques éléments sémantiques vus avec Markdown
+### Quelques éléments sémantiques vus avec Markdown
 
 Titres Hn, paragraphe ```<p>```, ```<strong>```, ```<em>```, listes ```<ul>``` / ```<ol>```, ```<br />```, ```<hr />```, ```<code>```, ```<blockquote>```.
 
-#### Rôles ARIA
+### Rôles ARIA
 
 L'attribut ```role=""``` : "Landmarks Regions" que l'on pourrait traduire en "Régions clés".
 Ce sont des rôles uniques à donner sur des zones précises du site.
@@ -923,7 +911,7 @@ Ce sont des rôles uniques à donner sur des zones précises du site.
 - ```contentinfo``` : Sur le tag ```<footer>``` du pied de page du site (Pas sur les autre footer dans la page)
 - ```search``` : Sur la zone du moteur de recherche du site
 
-#### Les commentaires
+### Les commentaires
 
 Entre les balises ```<html> </html>``` et pas en dehors.
 Ne doit pas contenir de données sensible, car c'est visible dans le code source.
@@ -937,15 +925,13 @@ Syntaxe : ```<!-- Un commentaire en HTML -->```
     HTML !
   -->
 ```
-### Ressources
+## Ressources
 
 - [Liste des balises dites "auto-fermante"](https://html.spec.whatwg.org/multipage/syntax.html#void-elements)
 - [Référence des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [Validateur HTML W3C](https://validator.w3.org/)
 
-## P2-J02
-
-### Introduction à CSS
+## Introduction à CSS
 
 CSS = Cascading Style Sheets
 
@@ -954,7 +940,7 @@ Permet de gérer la forme (l'apparence) de notre page HTML
 - HTML : le fond (le gateau)
 - CSS : la forme (la décoration autour du gateau + la cérise)
 
-#### Ecrire du CSS
+### Ecrire du CSS
 
 3 possibilités :
 
@@ -962,7 +948,7 @@ Permet de gérer la forme (l'apparence) de notre page HTML
 - depuis la balise ```<style> </style>```
 - depuis un fichier à part (monfichier.css) et ```<link rel="stylesheet" href="monfichier.css">``` (**raccourcis Emmet** : ```link:css```)
 
-#### Contenu CSS vu en cours
+### Contenu CSS vu en cours
 
 ```css
 body {
@@ -1002,11 +988,11 @@ blockquote p {
 }
 ```
 
-#### Code couleurs
+### Code couleurs
 
 - [Retrouvez une liste de couleurs ici](https://developer.mozilla.org/fr/docs/Web/CSS/Type_color)
 
-#### Nom de la couleur
+### Nom de la couleur
 
 ```css
  p {
@@ -1014,7 +1000,7 @@ blockquote p {
  }
 ```
 
-#### Code Hexadécimal
+### Code Hexadécimal
 
 Pour avoir une couleur au format Hexadécimal, on va utiliser le mot-clé '#' suivi de 6 caractères.
 
@@ -1038,7 +1024,7 @@ p {
 }
 ```
 
-#### Code RGB (Red Green Blue) - RVB (Rouge Vert Bleu)
+### Code RGB (Red Green Blue) - RVB (Rouge Vert Bleu)
 
 ```css
 p {
@@ -1059,7 +1045,7 @@ p {
 }
 ```
 
-#### Ressources
+### Ressources
 
 - [Contrast Triangle](https://contrast-triangle.com/)
 - [Tanaguru contrast finder](https://contrast-finder.tanaguru.com/)
@@ -1071,11 +1057,9 @@ p {
 - [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
 - [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
 
-## P2-J03
+## Faire des liens
 
-### Faire des liens
-
-#### Syntaxe
+### Syntaxe
 
 Syntaxe simple d'un lien :
 ```<a href="https://duckduckgo.com">DuckDuckGo</a>```
@@ -1093,7 +1077,7 @@ L'ancre :
 Un lien dans un nouvel onglet :
 ```<a href="https://duckduckgo.com" title="DuckDuckGo - Nouvelle fenêtre" target="_blank">DuckDuckGo</a>```
 
-#### Relatif et absolu
+### Relatif et absolu
 
 **Absolu** :
 URL complète ```https://www.integra11y.fr/programme.php```
@@ -1102,7 +1086,7 @@ URL complète ```https://www.integra11y.fr/programme.php```
 Chemin vers la page voulue, relatif à la position actuelle.
 Depuis la page d'accueil à la racine : ```./programme.php.```
 
-#### Lien interne et lien externe
+### Lien interne et lien externe
 
 **Lien interne** :
 Lien vers le site courant.
@@ -1112,7 +1096,7 @@ Lien relatif de préférence sauf exception : Si le contenu doit paraitre dans u
 Lien vers une adresse différente.
 Lien absolu uniquement.
 
-##### Mail et téléphone
+#### Mail et téléphone
 
 Pour rendre une adresse mail ou un numéro de téléphone cliquable.
 
@@ -1120,7 +1104,7 @@ Pour rendre une adresse mail ou un numéro de téléphone cliquable.
 
 **Tel** : ```<a href="tel:+33607080910">06 07 08 09 10</a>```
 
-#### Pseudo classes CSS pour les différents états des liens
+### Pseudo classes CSS pour les différents états des liens
 
 
 - ```:visited``` : Lien déjà visité (se base sur l'historique de navigation)
@@ -1129,19 +1113,19 @@ Pour rendre une adresse mail ou un numéro de téléphone cliquable.
 - ```:focus``` : Focus (Prise de contrôle de l'élément, au clic ou via une tabulation)
 - ```:link``` : Les liens n'ayant pas encore été visités (Ça ne veut pas dire style par défaut)
 
-#### Le style du focus
+### Le style du focus
 
 Naviguation au clavier avec les touches ```tab```, et ```Maj``` ```tab``` pour revenir en arrière.
 
 Le style de focus par défaut peut-être supprimé à condition d'être remplacé par une autre solution adéquate **visible**.<br/>
 **On ne supprime pas totalement le style de focus** sous peine de rendre impossible la navigation au clavier en cachant la position courante. On recommande de laisser le style par défaut, ou bien de mettre un autre style avec la propriétée ```outline``` en CSS, en respectant le ratio de contraste 3:1 avec la couleur de fond de la page.
 
-#### Identifier un lien 
+### Identifier un lien 
 
 Un lien doit être identifiable parmi le contenu qui l'entoure.<br/>
 Si on choisit d'avoir uniquement une couleur différente pour les liens, le ratio de contraste entre le lien et le texte qui l'entoure doit être d'au moins 3:1. Mais en plus, le ratio de contraste pour le lien doit être d'au moins 4,5:1 avec la couleur de fond. On peut s'aider de [cet outil](https://contrast-triangle.com) pour calculer le constraste de couleur.
 
-### Sélécteurs combinateurs
+## Sélécteurs combinateurs
 
 Différents sélecteurs combinateurs :
 
@@ -1152,13 +1136,11 @@ Différents sélecteurs combinateurs :
 
 Il n'y a pas de sélecteur ascendant (Sélectionner un parent à partir d'un enfant).
 
-## P2-J04
-
-### Spécificités CSS
+## Spécificités CSS
 
 La spécificité détermine quelles règles CSS sont appliquées par les navigateurs. Par exemple, lorsque deux sélecteurs s'appliquent au même élément, c'est celui qui a la plus grande spécificité qui l'emporte.
 
-#### Hiérarchie des spécificités
+### Hiérarchie des spécificités
 
 1. Les styles inline
 2. Les ```id```
@@ -1167,7 +1149,7 @@ La spécificité détermine quelles règles CSS sont appliquées par les navigat
 
 Attention à l'usage de ```!important``` !
 
-#### Ressources
+### Ressources
 
 - [Spécificité, MDN](https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Cascade_et_heritage#sp%C3%A9cificit%C3%A9_2)
 
@@ -1177,17 +1159,17 @@ Sites pratiques pour calculer la spécifité des sélecteurs :
 - [Polypane](https://polypane.app/css-specificity-calculator/)
 - [Keegan](https://specificity.keegan.st/)
 
-### Les images
+## Les images
 
-#### src
+### src
 
 ```<img src="./mon-image.jpg">```
 
-#### width et height
+### width et height
 
 Les attributs ```width``` et ```height``` correspondent bien à l'espace alloué à l'image sur la page, et l'image appelée n'est pas sur-dimensionnée pour éviter des problèmes de performance, ni sous-dimensionnée pour qu'elle reste nette.
 
-#### alt
+### alt
 
 Distinguer une image informative et une image décorative :<br/>
 **Informative** : Je remplis l'attribut alt.<br/>
@@ -1196,7 +1178,7 @@ Distinguer une image informative et une image décorative :<br/>
 L'attribut ```alt``` est donc **toujours présent** sur une image.<br/>
 Si l'alternative est trop longue ou trop complexe, la description est ajoutée dans la page, un lien peut-être fait avec l'atribut ```longdesc``` vers cette description.
 
-#### Lien images
+### Lien images
 
 Si le lien ne contient qu'une image, c'est le alt qui peut servir d'intitulé.
 
@@ -1214,7 +1196,7 @@ Ou bien avec ```title``` si l'intitulé du lien n'est pas suffisant (on reprends
 </a>
 ```
 
-#### Lien composite
+### Lien composite
 
 On évite de faire deux lien adjacents identiques (lien image et lien texte). Faisons plutôt un lien composite pour éviter la redondance.
 Ici c'est ce qu'on appelle un "lien composite", un lien contenant à la fois du texte et un ou plusieurs enfants de type image.
@@ -1227,15 +1209,13 @@ Si le lien contient un intitulé explicite, l'image est alors plutôt décorativ
 </a>
 ```
 
-#### Vérifier ses attributs alt
+### Vérifier ses attributs alt
 
 Avec l'extension navigateur Web Developer, dans l'onglet "images" puis : "Display Alt Attributes".
 
-## P2-J05
+## Modèle de boîte
 
-### Modèle de boîte
-
-#### Modèles de boîte :
+### Modèles de boîte :
 
 - **Par défaut** : ```box-sizing: content-box;``` - La taille de la boite de contenu
 - **Alternatif** : ```box-sizing: border-box;``` - La taille de la boite de contenu + ```padding``` + ```border``` compris.
@@ -1254,7 +1234,7 @@ html {
 }
 ```
 
-#### margin, padding, border
+### margin, padding, border
 
 Sur les éléments de type inline :
 
@@ -1269,7 +1249,7 @@ Sur les éléments de type bloc :
 
 La valeur ```auto``` sur sa propriété margin permet de donner des marges qui prennent la place disponible. Dès lorsque l'on spécifie une taille (```width```) à l'élément de type bloc, les marges de droite et de gauche en ```auto``` vont permettre de centrer l'élément.
 
-#### Fusion de marge
+### Fusion de marge
 
 Les marges verticales fusionnent sur les éléments de type bloc, en prenant la valeur la plus grande :
 
