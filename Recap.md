@@ -1059,8 +1059,20 @@ p {
 }
 ```
 
+#### Ressources
+
+- [Tanaguru contrast finder](https://contrast-finder.tanaguru.com/)
+- [Changer de couleur, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/color)
+- [Changer de taille de police, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)
+- [Définir les polices de caractères, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-family)
+- [Définir la graisse utilisée pour le texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/font-weight)
+- [Aligner du texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-align)
+- [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
+- <a href="https://developer.mozilla.org/fr/docs/Web/CSS/border" target="_blank">Définir la bordure d'un élément HTML, MDN</a>
+
 ## P2-J03
 
 ## P2-J04
 
 ## P2-J05
+https://developer.mozilla.org/fr/docs/Web/CSS/border
