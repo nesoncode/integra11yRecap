@@ -889,6 +889,7 @@ Un élément avec un attribut et une valeur :
   </body>
 </html>
 ```
+(**Raccourcis Emmet** : ```!```)
 
 #### Les éléments de structuration du contenu / éléments sectionnants
 
@@ -944,10 +945,122 @@ Syntaxe : ```<!-- Un commentaire en HTML -->```
 
 ## P2-J02
 
+### Introduction à CSS
+
+CSS = Cascading Style Sheets
+
+Permet de gérer la forme (l'apparence) de notre page HTML
+
+- HTML : le fond (le gateau)
+- CSS : la forme (la décoration autour du gateau + la cérise)
+
+#### Ecrire du CSS
+
+3 possibilités :
+
+- directement dans la balise ciblée : ```<p style="color: red">Mon texte </p>```
+- depuis la balise ```<style> </style>```
+- depuis un fichier à part (monfichier.css) et ```<link rel="stylesheet" href="monfichier.css">``` (**raccourcis Emmet** : ```link:css```)
+
+#### Contenu CSS vu en cours
+
+```css
+body {
+  font-family: Courier;
+}
+
+h1 {
+  text-align: center;
+  border: 10px solid blue;
+}
+
+p {
+  color: peru;
+  font-size: 18px;
+}
+
+blockquote {
+  background-color: gray;
+  width: 300px;
+  color: white;
+}
+
+blockquote p {
+  color: white;
+}
+
+#citation-2 {
+  background-color: tomato;
+}
+
+#experiences {
+  font-family: 'Segoe UI';
+}
+
+.liste-2 {
+  color: tomato;
+}
+```
+
+#### Code couleurs
+
+- [Retrouvez une liste de couleurs ici](https://developer.mozilla.org/fr/docs/Web/CSS/Type_color)
+
+#### Nom de la couleur
+
+```css
+ p {
+    color : red;
+ }
+```
+
+#### Code Hexadécimal
+
+Pour avoir une couleur au format Hexadécimal, on va utiliser le mot-clé '#' suivi de 6 caractères.
+
+Chacun des 6 caractères ira de 0 à f : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f
+
+- Noir : #000000
+- Noir-gris : #555555
+- Blanc : #ffffff
+
+Couleurs primaires : Rouge - Vert - Bleu (RVB - RGB : Red Green Blue)
+
+- Rouge : #ff0000
+- Vert : #00ff00
+- Bleu : #0000ff
+- Jaune : #ffff00
+- ff (Densité de couleur Rouge) 00 (Densité de couleur Vert) 00 (Densité de couleur Bleu)
+
+```css
+p {
+    color:#ff0000;
+}
+```
+
+#### Code RGB (Red Green Blue) - RVB (Rouge Vert Bleu)
+
+```css
+p {
+    color:rgb(0,0,0);
+}
+```
+
+rgb : on va lui donner des valeurs comprises entre 0 et 255
+
+- Noir : rgb(0, 0, 0)
+- Rouge : rgb(255, 0, 0)
+- Vert : rgb(0, 255, 0)
+- Blanc : rgb(255, 255, 255)
+
+```css
+p {
+    color:rgb(255, 0, 0);
+}
+```
+
 ## P2-J03
 
 ## P2-J04
 
 ## P2-J05
-
-test 12 AHAHAHAHAHAHAHHAHA
