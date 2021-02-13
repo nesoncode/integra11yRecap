@@ -839,6 +839,109 @@ Cest le cas de Wikipédia, on va pouvoir réutiliser les textes des articles sou
 
 ## P2-J01
 
+### Découverte du langage HTML
+
+Pour ouvrir l'inspecteur de code du navigateur : Raccourci ```F12``` ou via le clic droit "Inspecter l'élément".
+
+#### Le HTML
+
+C'est le fond. La forme c'est en CSS.
+
+On fait attention à :
+
+- La sémantique, c'est à dire l'utilisation des bons éléments HTML
+- La hiérarchie de contenu formé par l'order logique des titres
+- L'accessibilité
+
+##### Syntaxe
+
+- Syntaxe d'une balise d'ouverture : ```<html>```
+- Syntaxe d'une balise de fermeture : ```</html>```
+- Syntaxe d'une balise auto-fermante : ```<br />``` Dont l'espace + le slash final sont facultatif.
+
+Un élément avec un attribut et une valeur :
+
+```html
+<html lang="fr">
+
+</html>
+```
+
+#### Les éléments de base d'une page HTML
+
+
+- Le ```Doctype``` pour déclarer le document
+- ```html```, et son attribut ```lang```
+- ```head``` pour les metadonnées
+- La ```meta``` pour l'encodage de caractère avec l'attribut ```charset```
+- Le ```title``` pour le titre de la page
+- ```body``` pour le corps de page
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Titre de ma page</title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+```
+
+#### Les éléments de structuration du contenu / éléments sectionnants
+
+Ces balises sont obligatoire dans un document HTML 5 si ces zones existent :
+
+- ```<header>``` : L'en-tête relatif à son parent (Le site ou un article)
+- ```<nav>``` : Section de page représentant une liste de lien (Menu de navigation, fil d'Ariane)
+- ```<main>``` : Le contenu principal du site, élément unique par page.
+- ```<footer>``` : Le pied de page relatif à son parent (Le site ou un article)
+
+Il existe ensuite d'autres, pas obligatoire mais très utiles :
+
+- ```<section>``` : Section de page
+- ```<article>``` : Élément indépendant (article de blog, projet dans un portfolio, post dans un forum, produit dans un e-commerce, commentaire, …)
+- ```<aside>``` : Contenu relatif mais séparé du contenu principal (Sommaire de la page, texte secondaire)
+- ```<address>``` : Information de contact relative à son élément parent, article ou body (Nom, adresse postale)
+- Titre Hn : Titre de niveau 1 à 6
+
+#### Quelques éléments sémantiques vus avec Markdown
+
+Titres Hn, paragraphe ```<p>```, ```<strong>```, ```<em>```, listes ```<ul>``` / ```<ol>```, ```<br />```, ```<hr />```, ```<code>```, ```<blockquote>```.
+
+#### Rôles ARIA
+
+L'attribut ```role=""``` : "Landmarks Regions" que l'on pourrait traduire en "Régions clés".
+Ce sont des rôles uniques à donner sur des zones précises du site.
+
+- ```main``` : Sur le tag ```<main>```
+- ```banner``` : Sur le tag ```<header>``` de l'en-tête du site (Pas sur les autre header dans la page)
+- ```navigation``` : Sur le tag ```<nav>``` pour les navigations principales et secondaires du site uniquement
+- ```contentinfo``` : Sur le tag ```<footer>``` du pied de page du site (Pas sur les autre footer dans la page)
+- ```search``` : Sur la zone du moteur de recherche du site
+
+#### Les commentaires
+
+Entre les balises ```<html> </html>``` et pas en dehors.
+Ne doit pas contenir de données sensible, car c'est visible dans le code source.
+
+Syntaxe : ```<!-- Un commentaire en HTML -->```
+
+```html
+  <!--
+    Un autre commentaire
+    en
+    HTML !
+  -->
+```
+### Ressources
+
+- [Liste des balises dites "auto-fermante"](https://html.spec.whatwg.org/multipage/syntax.html#void-elements)
+- [Référence des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
+- [Validateur HTML W3C](https://validator.w3.org/)
+
 ## P2-J02
 
 ## P2-J03
