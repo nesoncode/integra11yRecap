@@ -46,7 +46,6 @@ ___
 
 ### Créer une sauvegarde VSCode :
 
-
 - dans la sidebar de VSCode, on clique sur le logo git
 - la liste des fichiers modifiés sont affichés
     - cliquer sur l'icone "plus" ➕
@@ -64,7 +63,6 @@ ___
 - Pour vérifier que tout est ok, on rafraichit la page du navigateur 😉
 
 ### Utiliser ```checkout branch``` pour retrouver du code supprimé :
-
 
 - afficher les commits avec Git Graph (click dans la barre d'état, en bas)
 - retrouver le commit de la suppression de WordPress (s'il a bien été nommé, ce sera rapide)
@@ -680,7 +678,164 @@ Ne pas utiliser la balise ```<hr>``` à des fins de présentation, par exemple p
 
 ## P1-J04
 
+### Git et les branches
+
+Pour travailler proprement, on ne va pas utiliser la branche ```main``` pour le développement : git nous permet de créer d'autres branches dans le même projet !
+
+C'est une bonne pratique, la branche ```main``` ne doit contenir qu'une version opérationnelle du projet, on va donc travailler, se tromper et corriger dans une branche à part pour ne pas abîmer le projet final.
+
+#### 1. Récupérer le code
+
+- on ouvre VSCode
+    - on doit avoir accès au bouton ```Cloner un dépôt```.
+    - si un dossier est ouvert au lancement, on le ferme (menu fichier / Fermer le dossier)
+- on clone le projet en local.
+- depuis le terminal la commande est : ```git clone adresse_du_dépot```
+
+#### 2. Etude du projet
+
+- avec Git Graph, on vérifie les branches et les commits existants
+- on regarde ce qui a déjà été fait dans le fichier ```programme.md```.
+
+#### 3. Création d'une nouvelle branche
+
+On a plusieurs solutions pour créer une nouvelle branche
+
+- avec Git Graph
+    - on fait un click droit sur le commit de référence (le point de départ de la nouvelle branche)
+    - on clique sur ```Create branch``` et on lui donne un nom
+    - pour se positionner dessus, on peut cocher la case ```check out```
+- avec le terminal
+    - version longue :
+        - on utilise la commande ```git branch <nom_branche>``` pour créer la branche
+        - on se positionne dessus avec la commande ```git checkout <nom_branche>```
+    - version courte :
+        - on peut faire les 2 commandes en une seule : ```git checkout -b <nom_branche>```
+
+Tous les commits qu'on fera par la suite se feront sur cette branche
+
+#### 4. On avance le travail et on push sur Github
+
+- on travaille comme d'habitude
+    - on modifie le fichier ```programme.md```
+    - on ajoute la version modifiée dans la zone de surveillance
+    - on commit pour créer une nouvelle version du projet dans l'historique :
+        - vérifier qu'on a bien enregistré tous les fichiers
+        - on ajoute le ou les fichier(s) dans la zone de surveillance
+            - sur VSCode
+                - on clicque sur ```+``` dans le controle de code source
+            - dans le terminal
+                - on tape ```git add nom_fichier```
+                - pour ajouter plusieurs fichiers/dossiers d'un seul coup, on peut taper ```git add .```
+        - sur VSCode, dans controle du code source, on doit saisir un message aussi explicite que possible et taper Ctrl+entrée pour valider
+        - dans le terminal, on peut taper la commande ```git commit -m "le message du commit"```
+    - on push sur GitHub :
+        - dans VSCode, controle du code source, sélectionner ```push``` dans le menu
+        - dans le terminal, taper la commande ```git push```
+          - pour pusher sur une autre branche que la branche principale (ou l'ajouter si elle n'existe pas encore), on doit indiquer son nom
+          - ```git push origin nom_branche```
+
+- on checke sur GitHub : les commits sont bien dans la nouvelle branche
+
+#### 5. Pull Request
+
+- une fois le travail terminé, on va proposer une mise à jour de la branche ```main```
+- bonne pratique : faire vérifier son code par d'autres développeurs, on appelle ça une revue de code
+    - on manque souvent de recul sur le code qu'on a produit
+    - un regard neuf peut repérer plus facilement les fautes de syntaxe, d'orthographe ou les erreurs de logique
+- GitHub nous propose un outil permettant aux développeurs d'échanger sur une modification proposée : ```la Pull Request```
+- le propriétaire du projet va être averti qu'une modification est proposée
+- il va pouvoir organiser la revue de code, laisser des commentaires pour le développeur afin qu'il corrige les erreurs
+- quand tout le monde est d'accord, on peut fusionner la branche de développement avec la branche ```main``` : on fait un ```merge``` de la branche de dev dans ```main```
+- dans ```main```, on a un nouveau commit qui contient toutes les modifications apportées
+
+#### 6. Mise à jour du code en local après une PR (Pull Request)
+
+- après la fusion (le merge), le code est à jour sur GitHub mais pas en local
+- on va devoir récupérer le smodifications pour que le dépôt local et le dépôt distant contienne la même chose
+- dans VSCode, on se positionne sur la branche main
+    - avec Git Graph : click droit sur la branche et ```Checkout branch```
+    - dans le terminal : ```git checkout main```
+- on récupère les modifs avec un pull
+- le graphe prend en compte les modifications
+
+#### Mise à jour du code d'une branche de dev à partir de la branche principale
+
+- si un autre développeur a créé une branche de son côté, il va devoir mettre à jour son code
+- pour éviter les problèmes, il doit prendre en compte les modifications apportées à la branche ```main```
+- git permet cette opération :
+    - on se positionne sur la branche de dev :
+        - avec Git Graph : click droit sur la branche et ```Checkout branch```
+        - dans le terminal : ```git checkout <branche_dev>```
+    - dans le terminal, on récupère les commits manquants avec un pull spécial : ```git pull origin main```
+    - origin est le nom donné au dépôt distant, main désigne la branche qu'on veut rapatrier dans la branche de dev
+- on peut vérifier le résultat sur le graphe, la branche de dev est au même niveau que la branche ```main```
+
+#### Suppression d'une branche 
+
+- une fois le travail effectué sur la branche de dev et la PR validée, on voudra souvent supprimer la branche de dev
+- il faut être positionné sur une autre branche pour effectuer cette opération, on se place sur la branche ```main```
+- pour cette opération, on doit de nouveau utiliser le terminal
+- il faut supprimer la branche dans le dépôt local
+    - ```git branch -d <nom_branche>```
+- mais aussi dans le dépôt distant
+    - ```git push origin --delete <nom_branche>```
+
 ## P1-J05
+
+### Droits d'auteur
+
+C'est la garantie légale que l'auteur restera propriétaire de son oeuvre En france (et dans plusieurs pays d'Europe), l'auteur et ses héritiers sont propriétaires d'une oeuvre jusqu'à 70 ans après le décès de l'auteur Au delà de ce délai, l'oeuvre passe dans le domaine public.
+
+### Licenses
+
+Plusieurs types de licences :
+
+- commerciale
+    - aucun droit de réutilisation ou de redistribution
+    - sources du programme ne sont pas fournies
+    - l'oeuvre est payante
+- shareware
+    - un peu moins restrctive
+    - on pourra obtenir le produit gratuitement
+    - limitations d'utilisation dans le temps ou au niveau des fonctionnalités
+- libres
+    - le logiciel est gratuit
+    - on peut le modifier ou le réutiliser
+    - on a tout de meme quelques restrictions selon la licence
+
+[Les licences libres dans wikipédia](https://fr.wikipedia.org/wiki/Liste_de_licences_libres)
+
+En tant que développeur web, on va surtout s'intéresser à la licence libre Creative Commons
+
+De très nombreux contenus (images, vidéos, sons) vont etre placés sous cette licence par leurs auteurs Ils facilitent ainsi la reddiffusion de leur contenu en donnant des droits aux utilisateurs
+
+[Creative Commons dans wikipédia](https://fr.wikipedia.org/wiki/Creative_Commons)
+
+Pour trouver des contenus CC, on peut utiliser la fonction de filtre proposée par google
+
+onglet images (ou videos), outils, droits d'usage et sélectionne Creative Commons
+
+Toutefois, il nous manque des informations pour utiliser correctement (et légalement) les contenus
+
+Le plus simple pour nous est d'utiliser le [moteur de recherche](https://search.creativecommons.org/) de la fondation CC
+
+En sélectionnant un contenu sur ce site, on va avoir toutes les mentions obligatoires à indiquer sur notre site pour utiliser le contenu
+
+Une autre solution est de rechercher des contenus libres de droit. Ces contenus pourront etre modifiés ou redistribués (gratuitement) par l'utilisateur
+
+Plusieurs sites permettent de les retouver facilement :
+- [flickr](https://www.flickr.com/explore)
+- [pixabay](https://pixabay.com/fr/)
+- [freeimages](https://www.freeimages.com/fr)
+- [iconfinder](https://www.iconfinder.com/)
+- [openclipart](https://openclipart.org/)
+
+**Remarque** : certains contenus texte de sites web sont aussi placés sous licence CC
+
+Cest le cas de Wikipédia, on va pouvoir réutiliser les textes des articles sous certaines conditions.
+
+[Plus de détails ici](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia)
 
 ## P2-J01
 
