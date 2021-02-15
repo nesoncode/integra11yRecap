@@ -68,6 +68,7 @@ Afin de garder aussi ressemblant que possible le dépot local et le dépot dista
 - Couleurs porteuses d'information
 - Animations innarêtables
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 
 ## Créer une sauvegarde VSCode :
@@ -88,6 +89,7 @@ ___
 
 - Pour vérifier que tout est ok, on rafraichit la page du navigateur 😉
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Utiliser ```checkout branch``` pour retrouver du code supprimé :
 
@@ -106,6 +108,7 @@ ___
 - on peut alors coller la partie Wordpress et ajouter les notes
 - on crée une sauvegarde et on l'envoie sur GitHub
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Balisages et sémantiques - Markdown
 
@@ -323,6 +326,7 @@ ___
 ---
 ```
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Markdown et HTML
 
@@ -701,6 +705,7 @@ Les pandas roux sont géniaux. Ils sont mignons et tout doux.
 
 Ne pas utiliser la balise ```<hr>``` à des fins de présentation, par exemple pour insérer une ligne horizontale pour « faire joli ». Le style CSS est là pour ça !
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Git et les branches
 
@@ -805,6 +810,7 @@ Tous les commits qu'on fera par la suite se feront sur cette branche
 - mais aussi dans le dépôt distant
     - ```git push origin --delete <nom_branche>```
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Droits d'auteur
 
@@ -860,6 +866,7 @@ Cest le cas de Wikipédia, on va pouvoir réutiliser les textes des articles sou
 
 [Plus de détails ici](https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Citation_et_r%C3%A9utilisation_du_contenu_de_Wikip%C3%A9dia)
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Découverte du langage HTML
 
@@ -966,6 +973,7 @@ Syntaxe : ```<!-- Un commentaire en HTML -->```
 - [Référence des éléments HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element)
 - [Validateur HTML W3C](https://validator.w3.org/)
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Introduction à CSS
 
@@ -1093,6 +1101,7 @@ p {
 - [Modifier le rendu d'un texte, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/text-transform)
 - [Définir la bordure d'un élément HTML, MDN](https://developer.mozilla.org/fr/docs/Web/CSS/border)
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Faire des liens
 
@@ -1162,6 +1171,7 @@ Le style de focus par défaut peut-être supprimé à condition d'être remplac�
 Un lien doit être identifiable parmi le contenu qui l'entoure.<br/>
 Si on choisit d'avoir uniquement une couleur différente pour les liens, le ratio de contraste entre le lien et le texte qui l'entoure doit être d'au moins 3:1. Mais en plus, le ratio de contraste pour le lien doit être d'au moins 4,5:1 avec la couleur de fond. On peut s'aider de [cet outil](https://contrast-triangle.com) pour calculer le constraste de couleur.
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Sélécteurs combinateurs
 
@@ -1174,6 +1184,7 @@ Différents sélecteurs combinateurs :
 
 Il n'y a pas de sélecteur ascendant (Sélectionner un parent à partir d'un enfant).
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Spécificités CSS
 
@@ -1198,6 +1209,7 @@ Sites pratiques pour calculer la spécifité des sélecteurs :
 - [Polypane](https://polypane.app/css-specificity-calculator/)
 - [Keegan](https://specificity.keegan.st/)
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Les images
 
@@ -1253,6 +1265,7 @@ Si le lien contient un intitulé explicite, l'image est alors plutôt décorativ
 
 Avec l'extension navigateur Web Developer, dans l'onglet "images" puis : "Display Alt Attributes".
 
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
 ___
 ## Modèle de boîte
 
