@@ -29,9 +29,9 @@
   
 - [Modèle de boîte](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#modèle-de-boîte)
 
-- [Positionner avec "position" et "float"](https://github.com/nesoncode/integra11yRecap/blob/p2-j06/Recap.md#positionner-avec-position-et-float)
+- [Positionner avec "position" et "float"](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#positionner-avec-position-et-float)
 
-- [Positionner avec "display"](https://github.com/nesoncode/integra11yRecap/blob/p2-j06/Recap.md#positionner-avec-display)
+- [Positionner avec "display"](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#positionner-avec-display)
 
 
 ## Git :
