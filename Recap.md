@@ -29,6 +29,10 @@
   
 - [Modèle de boîte](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#modèle-de-boîte)
 
+- [Positionner avec "position" et "float"](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#positionner-avec-position-et-float)
+
+- [Positionner avec "display"](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#positionner-avec-display)
+
 
 ## Git :
 SCM (Source Code Manager), un gestionnaire de version qui permet de garder dans un historique les différentes étapes du développement.
@@ -1309,3 +1313,117 @@ Les marges verticales fusionnent sur les éléments de type bloc, en prenant la 
 
 - Entre éléments adjacents
 - Entre éléments parents / enfants
+
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
+___
+## Positionner avec "position" et "float"
+
+### Définition du flux
+
+Flux = ordre dans lequel les éléments HTML sont placés les uns après les autres dans le code de la page. Les éléments s'affichent dans l'ordre où ils sont déclarés dans le code HTML. C'est donc **la position par défaut**.
+
+### Différents types de positionnement avec ```position```
+
+#### Le positionnement "static"
+
+- Positionnement par défaut de chaque élément — cela veut tout simplement dire « positionner l'élément selon le cours normal de placement — rien de spécial à voir ici ».
+- N'a aucun effet sur un élément si on ajoute cette propriété.
+
+#### Le positionnement "relative"
+
+- Permet de décaler un élément par rapport à sa position par défaut dans la page.
+- Doit être combinée avec les propriétés ```top```, ```bottom```, ```left``` et ```right```.
+- Utilisé seul, il permet de créer créer un parent positionné pour les éléments enfants et descendants positionnés en absolu.
+
+#### Le positionnement "absolute"
+
+- Un élément positionné en absolute **est retiré du flux normal de la page**.
+- On utilise aussi les propriétés top, bottom, left et right pour le positionner.
+- Par défaut, l'élément absolu se positionne par rapport à l'élément ```<htlml>```.
+- On peut **changer ce contexte de positionnement** en ajoutant ```position: relative``` à un élément ancêtre (parent ou plus lointain).
+
+#### La propriété ```z-index```
+
+- Permet de modifier l'ordre des éléments qui se superposent, indépendemment de leur place dans le code source.
+- Ne marche qu'avec des éléments positionnés (en relative, absolute, fixed ou sticky).
+
+#### Le positionnement "fixed"
+
+- Comme pour le positionnement absolu, l'élément fixed est lui aussi retiré du flux normal de la page.
+- Mais l'élément est toujours positionné par rapport à la fenêtre du navigateur.
+- Les éléments en position fixe ne bougent plus lorsque le document est scrollé.
+
+#### Le positionnement "sticky"
+
+- C'est un **croisement entre position relative et position fixe**.
+- Le positionnement sticky s’effectue par rapport à la position de son conteneur, et non pas la fenêtre du navigateur.
+- Le positionnement sticky démarre à partir d'un seuil défini (ex: à partir de 10px du haut de la fenêtre) :
+  - l'élément se positionnera dans le flux normal de la page jusqu'à ce que le viewport défile au point où l'élément est à moins de 10 pixels du haut.
+  - Ensuite, il sera fixé à 10 pixels du haut, jusqu'à ce que le viewport redéfile jusqu'avant ce seuil.
+
+#### Les flottants
+
+- La propriété ```float``` permet d'implémenter une image flottant dans une colonne de texte.
+- L'élément possèdant la propriété ```float``` est **retiré du flux normal de la page** et collé du côté de son conteneur parent.
+- Tout contenu disposé après l'élément flottant dans le cours normal de page (c'est à dire disposé à la suite dans le code source) va maintenant l'envelopper en remplissant l'espace sur toute sa hauteur.
+- On peut dégager un élément, c'est-à-dire l'empêcher de remonter pour se placer à côté du flottant avec la propriété ```clear```
+
+#### Le "clearfix hack"
+
+- Pour certains designs, on souhaite que l'élément flottant ne dépasse pas de son conteneur et avoir une couleur de fond ou une bordure autour du texte et de l'image. Pour ça, on utilise le clearfix hack, avec le pseudo-élément ```::after```.
+
+### Accessibilité et positionnement
+
+Attention aux points suivants lorsqu'on utilise le positionnement en CSS :
+
+- l'ordre des contenus qui doit être cohérent dans le code source.
+- les risques de superposition du contenu au zoom texte, graphique ou lors de l'agrandissement des caractères
+
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
+___
+## Positionner avec "display"
+
+### Rappel sur les éléments "inline" et "block"
+
+Les éléments HTML ont tous un mode d'affichage par défaut : "inline" et "block". Pour rappel :
+
+- [la liste des éléments de type "inline"](https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_ligne#liste_des_%C3%A9l%C3%A9ments_en_ligne) (documentation MDN)
+- [la liste des éléments de type "block"](https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_bloc#%C3%A9l%C3%A9ment_de_bloc_ou_%C3%A9l%C3%A9ment_en_ligne) (documentation MDN)
+
+Certaines propriétés CSS n'ont pas d'effet sur les éléments inline : ```width```, ```height```, ```margin-top``` et ```margin-bottom```.
+
+### Modifier le rendu d'un élément
+
+On peut modifier le mode d'affichage par défaut d'un élément grâce à la propriété ```display``` :
+
+- ```display: block;``` : pour transformer le mode d'affichage d'un élément en "block"
+- ```display: inline;``` : pour transformer le mode d'affichage d'un élément en "inline"
+- ```display: inline-block;``` : pour placer des éléments les uns à côté des autres (comme inline) tout en permettant d'utiliser les propriétés CSS de hauteur, largeur et marges
+
+On peut centrer horizontalement des éléments en ```inline-block``` en utilisant la propriété ```text-align: center;``` sur le parent.
+
+On peut gérer l'alignement vertical des éléments de type "inline" ou modifiés par la propriété ```display: inline-block;``` grâce à la propriété ```vertical-align.```
+
+### Conclusion générale sur le positionnement
+
+#### Les erreurs à ne pas commettre
+
+- Ne pas utiliser la propriété ```position``` à tort et à travers, la majorité des positionnements en CSS peuvent s'effectuer sans cette propriété.
+- Ne pas tout positionner en "absolute" : c'est un positionnement à la fois puissant et limité qui doit être utilisé ponctuellement.
+
+#### Quels types de positionnement utiliser en priorité ?
+
+- Garder les éléments dans le flux, jouer sur les marges internes et externes
+- Modifier le mode de rendu avec la propriété ```display```.
+- ```float``` pour faire flotter du texte autour d'un élément (pas pour des mises en page complètes)
+- Utiliser le positionnement absolu dans les conditions suivantes :
+  - si on sait positionner un élément en absolu par rapport à son parent ou ancêtre positionné
+  - si on a une idée précise des conséquences du positionnement absolu (risque de chevauchement des contenus)
+  - si on sait à l'avance quels sont les contenus qui seront ainsi positionnés, et si ces contenus ne risquent pas d'être augmentés et ainsi de déborder de l'espace défini.
+- Utiliser le positionnement relatif principalement pour :
+  - créer un parent positionné pour les éléments enfants et descendants positionnés en absolu
+  - décaler de quelques pixels un élément par rapport à sa position normale. Si vous écrivez ```position: relative; top: -356px;```, c'est probablement qu'il est mal utilisé.
+- Utiliser le positionnement fixe en connaissance de cause, en prenant bien attention de le tester sur différentes tailles d'écran et au zoom.
+
+[Sommaire](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md#sommaire)
+___
