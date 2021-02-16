@@ -2,7 +2,7 @@
 
 ## [Résumé des cours](https://github.com/nesoncode/integra11yRecap/blob/main/Recap.md)
 
-## [HTML]()
+## [HTML](https://github.com/nesoncode/integra11yRecap/blob/main/HTML.md)
 
 ## [CSS]()
 
