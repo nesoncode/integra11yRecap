@@ -44,6 +44,7 @@ Il contient des informations périphériques, des liens, des citations, des publ
 
 C'est ici qu'**on trouvera les informations de contact, de copyright…** C'est un endroit où on place **des informations communes à l'ensemble du site mais qui ne sont pas primordiales** pour le site en tant que tel. Le pied de page est parfois utilisé par les outils de référencement afin de fournir un accès rapide à certaines parties du site.
 
+___
 ## Les rôles ARIA
 
 [ARIA](https://developer.mozilla.org/fr/docs/Glossaire/ARIA) est une méthode qui **permet d'indiquer aux technologies d'aide à la navigation qu'un élément HTML possède des fonctionnalités web applicatives.**
@@ -54,6 +55,7 @@ C'est ici qu'**on trouvera les informations de contact, de copyright…** C'est 
 - ```<aside role="complementary">```
 - ```<footer role="contentinfo">```
 
+___
 ## Les éléments de type "bloc"
 
 **Occupe toute la largeur disponible**. Lorsque 2 éléments blocs se suivent dans une page, ils sont positionnés (par défaut) l'un sous l'autre. Les balises de type ```bloc``` sont des **boites d'éléments qui peuvent contenir des éléments orphelins** (comme du texte, simples caractères...), **des balises de type ```inline```**, **des balises de type ```autofermante```** et même d'autres balises de type ```bloc```. 
@@ -75,6 +77,7 @@ C'est ici qu'**on trouvera les informations de contact, de copyright…** C'est 
 - Formulaires de saisie : ```<form></form>```
 - Eléments de figure : ```<figure></figure>```
 
+___
 ## Les éléments de type "inline"
 
 Les balises de type ```inline``` ne **peuvent contenir que des éléments orphelins** (texte...), d'**autres balises ```inline```**, mais pas de balises de type ```bloc```.
@@ -90,6 +93,7 @@ Les balises de type ```inline``` ne **peuvent contenir que des éléments orphel
 - Eléments de code en incise : ```<code></code>```
 - Eléments de titre : ```<titre></titre>```
 
+___
 ## Les éléments de type "autofermants"
 
 Les balises de type ```autofermants``` sont des **balises qui sont ouvrantes et fermantes en même temps**. Cela signifie qu'elles **ne contiennent pas de contenu**. On ferme donc la balise en ajoutant un espace et un slash (```/```) à la fin de la balise.
@@ -100,7 +104,8 @@ Les balises de type ```autofermants``` sont des **balises qui sont ouvrantes et 
 - Eléments de lien : ```<link />``` (également ```inline```)
 - Eléments de rupture thématique : ```<hr />``` (également ```bloc```)
 
-### Ressources
+___
+## Ressources
 
 - [Découper une page web en sections logiques, MDN](https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/D%C3%A9couper_une_page_web_en_sections_logiques)
 - [Les niveaux ou "types" d'éléments HTML block et inline](https://www.pierre-giraud.com/html-css-apprendre-coder-cours/block-inline/)
